@@ -36,25 +36,9 @@ Find your Job Now.Use this theme from asghar dev suitable for your job <br>
 git clone https://github.com/asgharali101/Jobsz-web
 ```
 
-2. Install the dependencies:
-
-```
-npm install
-```
-
-3. Run the project
-
-```
-# Start server
-npm run start
-
-# or Build
-npm run build
-```
-
 ## Live demo
 
-Check the live demo here: [https://tailwind-ecommerce-demo.vercel.app/](https://tailwind-ecommerce-demo.vercel.app/)
+Check the live demo here: [https://job-web-psi.vercel.app//](https://job-web-psi.vercel.app//)
 
 ## License
 
