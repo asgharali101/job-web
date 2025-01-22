@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jobsz</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+
+</head>
+
+<body>
+	<section id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-white shadow_box" id="navbar_sticky">
+			<div class="container-xl">
+				<a class="text-black p-0 navbar-brand fw-bold me-4" href="index.html"><i
+						class="fa fa-user col_blue me-1"></i> Jobsz</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-md-4 ps-md-2 ms-lg-3 ps-lg-2 ms-xl-5 ps-xl-5 nav_left">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About </a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								List
+							</a>
+							<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="list.html"> List</a></li>
+								<li><a class="dropdown-item border-0" href="detail.html"> List Detail</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Blog
+							</a>
+							<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+								<li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="plan.html">Plans </a>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Pages
+							</a>
+							<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+								<li><a class="dropdown-item border-0" href="contact.html"> Contact</a></li>
+							</ul>
+						</li>
+
+					</ul>
+					<ul class="navbar-nav mb-0 ms-auto">
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle  nav_hide" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-lock col_blue me-1 align-middle"></i> Sign In
+							</a>
+							<ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
+								<li>
+									<input class="form-control" placeholder="Email Address" type="text">
+									<input class="form-control mt-3" placeholder="Password" type="password">
+									<div class="form-check mt-3">
+										<input type="checkbox" class="form-check-input" id="customCheck1">
+										<label class="form-check-label" for="customCheck1">Keep me signed in</label>
+									</div>
+									<h6 class="mt-3"><a href="#">Forgot password?</a></h6>
+									<h6 class="mt-3"><a class="button d-block text-center" href="#">Sign In</a></h6>
+									<h6 class="mt-3 text-center">Don't have an account? <a href="#">Sign up</a></h6>
+									<h6 class="mt-3 fw-bold col_blue text-center">or</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block"><a class="button p-3 font_14" href="#"><i
+													class="fa fa-facebook me-1 align-middle fs-5"></i> Log In Via
+												Facebook </a></li>
+										<li class="d-inline-block ms-2"><a class="button_2 p-3 font_14" href="#"><i
+													class="fa fa-google me-1 fs-5 align-middle"></i> Log In Via
+												Gmail</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle  nav_hide" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-plus-circle col_blue me-1 align-middle"></i> Register
+							</a>
+							<ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
+								<li>
+									<input class="form-control" placeholder="User Name" type="text">
+									<input class="form-control mt-3" placeholder="Email Address" type="text">
+									<input class="form-control mt-3" placeholder="Password" type="text">
+									<input class="form-control mt-3" placeholder="Confirm Password" type="text">
+									<input class="form-control mt-3" placeholder="Phone" type="text">
+									<select class="form-select mt-3" aria-label="Select Category">
+										<option selected="">Open this select menu</option>
+										<option value="1">One</option>
+										<option value="2">Two</option>
+										<option value="3">Threee</option>
+									</select>
+									<div class="form-check mt-3">
+										<input type="checkbox" class="form-check-input" id="customCheck1">
+										<label class="form-check-label" for="customCheck1">You accept our Terms and
+											Conditions and Privacy Policy</label>
+									</div>
+									<h6 class="mt-3"><a class="button d-block text-center" href="#">Register</a></h6>
+									<h6 class="mt-3 mb-0 text-center">Already Have an Account? <a href="#">Sign In</a>
+									</h6>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link button fs-6" href="#"><i class="fa fa-plus me-1 align-middle"></i> Post A
+								Job </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	<section id="center" class="center_h bg-light">
+		<div class="container-xl">
+			<div class="row center_h1">
+				<div class="col-md-6">
+					<div class="center_h1l">
+						<h1>Get The <span class="col_blue">Right Job</span> You <br> Deserve.</h1>
+						<p class="mt-3">28000+ jobs listed here! your dream job waiting.</p>
+						<div class="center_h1li row bg-white p-3 mx-0 mt-4">
+							<div class="col-md-4">
+								<div class="center_h1li1 mt-1">
+									<div class="input-group">
+										<span class="input-group-btn">
+											<button
+												class="btn btn-primary bg-transparent rounded-0 fs-5 border-0 col_blue"
+												type="button">
+												<i class="fa fa-search"></i> </button>
+										</span>
+										<input type="text" class="form-control border-0" placeholder="Job Title ">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="center_h1li1 mt-1">
+									<div class="input-group">
+										<span class="input-group-btn">
+											<button
+												class="btn btn-primary bg-transparent rounded-0 fs-5 border-0 col_blue"
+												type="button">
+												<i class="fa fa-map-marker"></i> </button>
+										</span>
+										<input type="text" class="form-control border-0" placeholder="Postcode">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="center_h1li3">
+									<h6 class="mb-0"><a class="button" href="#">Search</a></h6>
+								</div>
+							</div>
+						</div>
+						<h5 class="mt-4">Regular User. <a class="col_blue" href="#">View price plan</a></h5>
+						<ul class="mb-0 mt-4">
+							<li class="d-inline-block"><a href="#"><img alt="abc" class="rounded-circle"
+										src="img/1.jpg"></a></li>
+							<li class="d-inline-block"><a href="#"><img alt="abc" class="rounded-circle"
+										src="img/2.jpg"></a></li>
+							<li class="d-inline-block"><a href="#"><img alt="abc" class="rounded-circle"
+										src="img/3.jpg"></a></li>
+							<li class="d-inline-block"><a href="#"><img alt="abc" class="rounded-circle"
+										src="img/4.jpg"></a></li>
+							<li class="d-inline-block"><a href="#"><img alt="abc" class="rounded-circle"
+										src="img/5.jpg"></a></li>
+							<li class="d-inline-block"><a href="#"><img alt="abc" class="rounded-circle"
+										src="img/6.jpg"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="center_h1r">
+						<div class="grid clearfix">
+							<figure class="effect-jazz mb-0">
+								<a href="#"><img src="img/7.jpg" class="w-100" alt="abc"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="categ" class="p_3 carousel_p">
+		<div class="container-xl">
+			<div class="row categ_top text-center mb-4">
+				<div class="col-md-12">
+					<h1>Popular job <span class="col_blue">categories</span></h1>
+					<p class="mb-0">There is place to find the Popular job, browse wanted your job</p>
+				</div>
+			</div>
+			<div class="row categ_1">
+				<div class="col-md-12">
+					<div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
+								class="active" aria-label="Slide 1" aria-current="true"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+								aria-label="Slide 2" class=""></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="categ_1i row">
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-calculator"></i></span>
+											<h5 class="mt-3"><a href="#">Banking & Financial</a></h5>
+											<h6 class="mb-0">1k Job</h6>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-bullhorn"></i></span>
+											<h5 class="mt-3"><a href="#">Marketing</a></h5>
+											<h6 class="mb-0">2k Job</h6>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-user"></i></span>
+											<h5 class="mt-3"><a href="#">Customer Service</a></h5>
+											<h6 class="mb-0">3k Job</h6>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-medkit"></i></span>
+											<h5 class="mt-3"><a href="#">Health & Care</a></h5>
+											<h6 class="mb-0">4k Job</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="categ_1i row">
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-graduation-cap"></i></span>
+											<h5 class="mt-3"><a href="#">Education</a></h5>
+											<h6 class="mb-0">3k Job</h6>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-desktop"></i></span>
+											<h5 class="mt-3"><a href="#">Accounts</a></h5>
+											<h6 class="mb-0">5k Job</h6>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-wechat"></i></span>
+											<h5 class="mt-3"><a href="#">Web Designing</a></h5>
+											<h6 class="mb-0">2k Job</h6>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<div class="categ_1il  bg-light p-5 px-4">
+											<span
+												class="d-inline-block rounded-circle bg-white col_blue fs-4 text-center"><i
+													class="fa fa-mobile"></i></span>
+											<h5 class="mt-3"><a href="#">Tower</a></h5>
+											<h6 class="mb-0">4k Job</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="process" class="bg-light">
+		<div class="container-xl">
+			<div class="row process_1">
+				<div class="col-md-6">
+					<div class="process_1l position-relative">
+						<div class="process_1li">
+							<div class="grid clearfix">
+								<figure class="effect-jazz mb-0">
+									<a href="#"><img src="img/8.jpg" class="w-100" alt="abc"></a>
+								</figure>
+							</div>
+						</div>
+						<div
+							class="w-50  process_1li1 p-4 rounded-3 bg-white position-absolute bottom-0 text-center flex flex-col mx-auto">
+							<img alt="abc" class="rounded-circle w-25 h-25"
+								src="img/WhatsApp Image 2024-11-05 at 13.30.48_cab74d84.png">
+							<h5 class="mt-3">Asghar ali</h5>
+							<h6 class="font_14">Web Designer</h6>
+							<h6><i class="fa fa-map-marker col_blue me-1"></i> Pakistan</h6>
+							<h6 class="mb-0 mt-3"><a class="button d-block pt-2 pb-2" href="#">Hire Me</a></h6>
+						</div>
+						<div class="process_1li2 w-100 position-absolute top-0 text-end">
+							<span class="d-inline-block rounded-3 bg_blue text-white fs-2 text-center"><i
+									class="fa fa-user"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="process_1r pt-5 pb-5">
+						<h2>What is <span class="col_blue">process</span> hiJobswithAli?</h2>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse <br>
+							cillum dolore eu fugiat nulla pariatur.</p>
+						<div class="process_1ri row mt-4">
+							<div class="col-md-2 col-sm-2">
+								<div class="process_1ril">
+									<span class="d-inline-block rounded-circle bg-white col_blue fs-2 text-center"><i
+											class="fa fa-user-plus"></i></span>
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="process_1rir bg-white p-3 rounded-3">
+									<h4>Create Your Account</h4>
+									<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium laudantium.</p>
+								</div>
+							</div>
+						</div>
+						<div class="process_1ri row mt-4">
+							<div class="col-md-2 col-sm-2">
+								<div class="process_1ril">
+									<span class="d-inline-block rounded-circle bg-white col_blue fs-2 text-center"><i
+											class="fa fa-briefcase"></i></span>
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="process_1rir bg-white p-3 rounded-3">
+									<h4>Find Your Job</h4>
+									<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium laudantium.</p>
+								</div>
+							</div>
+						</div>
+						<div class="process_1ri row mt-4">
+							<div class="col-md-2 col-sm-2">
+								<div class="process_1ril">
+									<span class="d-inline-block rounded-circle bg-white col_blue fs-2 text-center"><i
+											class="fa fa-buysellads"></i></span>
+								</div>
+							</div>
+							<div class="col-md-10 col-sm-10">
+								<div class="process_1rir bg-white p-3 rounded-3">
+									<h4>Join Your Company</h4>
+									<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+										accusantium laudantium.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="job" class="p_3">
+		<div class="container-xl">
+			<div class="row categ_top text-center mb-4">
+				<div class="col-md-12">
+					<h1>Today latest <span class="col_blue">post job</span></h1>
+					<p class="mb-0">There is place to find the Popular job, browse wanted your job</p>
+				</div>
+			</div>
+			<div class="row job_1">
+				<div class="col-md-6">
+					<div class="job_1l shadow_box p-4">
+						<div class="job_1li row">
+							<div class="col-md-2">
+								<div class="job_1lil">
+									<span class="font_60 lh-1 col_blue"><i class="fa fa-buysellads"></i></span>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="job_1lim">
+									<h5><a href="#">Office Manager</a></h5>
+									<h6><span class="fw-bold col_blue">Administrative</span> 5 mins ago</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block mx-1"><i class="fa fa-map-marker col_blue me-1"></i>
+											New York , 22431</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-clock-o col_blue me-1"></i> Full
+											time</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-dollar col_blue me-1"></i> $28k
+											- $40/m</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="job_1lir text-end">
+									<span class="fs-5 d-inline-block bg-light text-center rounded-circle"><i
+											class="fa fa-bookmark-o"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="job_1l shadow_box p-4">
+						<div class="job_1li row">
+							<div class="col-md-2">
+								<div class="job_1lil">
+									<span class="font_60 lh-1 col_blue"><i class="fa fa-laptop"></i></span>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="job_1lim">
+									<h5><a href="#">Accountant</a></h5>
+									<h6><span class="fw-bold col_blue">Finance and Accounting</span> 4 mins ago</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block mx-1"><i class="fa fa-map-marker col_blue me-1"></i>
+											New York , 22431</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-clock-o col_blue me-1"></i> Full
+											time</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-dollar col_blue me-1"></i> $28k
+											- $40/m</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="job_1lir text-end">
+									<span class="fs-5 d-inline-block bg-light text-center rounded-circle"><i
+											class="fa fa-bookmark-o"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row job_1 mt-4">
+				<div class="col-md-6">
+					<div class="job_1l shadow_box p-4">
+						<div class="job_1li row">
+							<div class="col-md-2">
+								<div class="job_1lil">
+									<span class="font_60 lh-1 col_blue"><i class="fa fa-twitter"></i></span>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="job_1lim">
+									<h5><a href="#">Web Developer</a></h5>
+									<h6><span class="fw-bold col_blue">Technology and IT</span> 5 mins ago</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block mx-1"><i class="fa fa-map-marker col_blue me-1"></i>
+											New York , 22431</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-clock-o col_blue me-1"></i> Full
+											time</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-dollar col_blue me-1"></i> $28k
+											- $40/m</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="job_1lir text-end">
+									<span class="fs-5 d-inline-block bg-light text-center rounded-circle"><i
+											class="fa fa-bookmark-o"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="job_1l shadow_box p-4">
+						<div class="job_1li row">
+							<div class="col-md-2">
+								<div class="job_1lil">
+									<span class="font_60 lh-1 col_blue"><i class="fa fa-medkit"></i></span>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="job_1lim">
+									<h5><a href="#">Medical Assistant</a></h5>
+									<h6><span class="fw-bold col_blue">Healthcare</span> 4 mins ago</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block mx-1"><i class="fa fa-map-marker col_blue me-1"></i>
+											New York , 22431</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-clock-o col_blue me-1"></i> Full
+											time</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-dollar col_blue me-1"></i> $28k
+											- $40/m</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="job_1lir text-end">
+									<span class="fs-5 d-inline-block bg-light text-center rounded-circle"><i
+											class="fa fa-bookmark-o"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row job_1 mt-4">
+				<div class="col-md-6">
+					<div class="job_1l shadow_box p-4">
+						<div class="job_1li row">
+							<div class="col-md-2">
+								<div class="job_1lil">
+									<span class="font_60 lh-1 col_blue"><i class="fa fa-suitcase"></i></span>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="job_1lim">
+									<h5><a href="#">Marketing Manager</a></h5>
+									<h6><span class="fw-bold col_blue">Sales and Marketing</span> 5 mins ago</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block mx-1"><i class="fa fa-map-marker col_blue me-1"></i>
+											New York , 22431</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-clock-o col_blue me-1"></i> Full
+											time</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-dollar col_blue me-1"></i> $28k
+											- $40/m</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="job_1lir text-end">
+									<span class="fs-5 d-inline-block bg-light text-center rounded-circle"><i
+											class="fa fa-bookmark-o"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="job_1l shadow_box p-4">
+						<div class="job_1li row">
+							<div class="col-md-2">
+								<div class="job_1lil">
+									<span class="font_60 lh-1 col_blue"><i class="fa fa-google"></i></span>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="job_1lim">
+									<h5><a href="#">Electrical Engineer</a></h5>
+									<h6><span class="fw-bold col_blue">Engineering</span> 4 mins ago</h6>
+									<ul class="mb-0 mt-3">
+										<li class="d-inline-block mx-1"><i class="fa fa-map-marker col_blue me-1"></i>
+											New York , 22431</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-clock-o col_blue me-1"></i> Full
+											time</li>
+										<li class="d-inline-block mx-1"><i class="fa fa-dollar col_blue me-1"></i> $28k
+											- $40/m</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="job_1lir text-end">
+									<span class="fs-5 d-inline-block bg-light text-center rounded-circle"><i
+											class="fa fa-bookmark-o"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="place" class="p_3 bg-light">
+		<div class="container-xl">
+			<div class="row job_2">
+				<div class="col-md-6">
+					<div class="job_2l pt-5 pb-5">
+						<h1>Get the world wide <br> <span class="col_blue">21000+ talented People</span> <br> in one
+							place</h1>
+						<p class="mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+							fugiat nulla pariatur.</p>
+						<h6 class="mb-0 mt-4"><a class="button" href="#">Hire Candidate</a></h6>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="job_2r">
+						<div class="grid clearfix">
+							<figure class="effect-jazz mb-0">
+								<a href="#"><img src="img/10.jpg" class="w-100" alt="abc"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="resume" class="p_3">
+		<div class="container-xl">
+			<div class="row resume_1">
+				<div class="col-md-6">
+					<div class="resume_1l">
+						<div class="grid clearfix">
+							<figure class="effect-jazz mb-0">
+								<a href="#"><img src="img/11.jpg" class="w-100" alt="abc"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 bg_blue">
+					<div class="resume_1r p-3">
+						<h1 class="text-white">Get the matched the most valuable jobs, just <span
+								class="text-warning">drop your CV</span> at jobsz.</h1>
+						<p class="mt-3 text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+							accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore
+							veritatis quasi.</p>
+						<h6 class="mb-0 mt-4"><a class="button_1" href="#">Upload CV/ Resume</a></h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testim" class="p_3 bg-light carousel_p">
+		<div class="container-xl">
+			<div class="row categ_top mb-4">
+				<div class="col-md-12">
+					<h1 class="mb-0"> <span class="col_blue">Reviews of people </span> who have <br>
+						found jobs through jobsz</h1>
+				</div>
+			</div>
+			<div class="testim_1 row">
+				<div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+							class="active" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+							aria-label="Slide 2" class="" aria-current="true"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="testim_1i row">
+								<div class="col-md-4">
+									<div class="testim_1i1 bg-white p-4 clearfix">
+										<span class="text-warning">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</span>
+										<div class="testim_1i1i clearfix mt-3">
+											<span><img src="img/1.jpg" alt="abc"
+													class="rounded-circle me-3 float-start"></span>
+											<h6 class="mb-0 fw-bold fs-5 lh-1"> Eget Nulla <br> <span
+													class="col_blue  fs-6 fw-normal">Copy Writer</span></h6>
+										</div>
+										<p class="mb-0 mt-3">Far far away, behind the word mountains, far from the
+											countries Vokalia and Consonantia, there live the blind texts.</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="testim_1i1 bg-white p-4 clearfix">
+										<span class="text-warning">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-half-o"></i>
+										</span>
+										<div class="testim_1i1i clearfix mt-3">
+											<span><img src="img/2.jpg" alt="abc"
+													class="rounded-circle me-3 float-start"></span>
+											<h6 class="mb-0 fw-bold fs-5 lh-1"> Lorem Porta <br> <span
+													class="col_blue fs-6 fw-normal">Marketing</span></h6>
+										</div>
+										<p class="mb-0 mt-3">Far far away, behind the word mountains, far from the
+											countries Vokalia and Consonantia, there live the blind texts.</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="testim_1i1 bg-white p-4 clearfix">
+										<span class="text-warning">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<div class="testim_1i1i clearfix mt-3">
+											<span><img src="img/3.jpg" alt="abc"
+													class="rounded-circle me-3 float-start"></span>
+											<h6 class="mb-0 fw-bold fs-5 lh-1"> Dolor Amet <br> <span
+													class="col_blue fs-6 fw-normal">Data Science</span></h6>
+										</div>
+										<p class="mb-0 mt-3">Far far away, behind the word mountains, far from the
+											countries Vokalia and Consonantia, there live the blind texts.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="testim_1i row">
+								<div class="col-md-4">
+									<div class="testim_1i1 bg-white p-4 clearfix">
+										<span class="text-warning">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-o"></i>
+										</span>
+										<div class="testim_1i1i clearfix mt-3">
+											<span><img src="img/4.jpg" alt="abc"
+													class="rounded-circle me-3 float-start"></span>
+											<h6 class="mb-0 fw-bold fs-5 lh-1"> Eget Nulla <br> <span
+													class="col_blue  fs-6 fw-normal">Copy Writer</span></h6>
+										</div>
+										<p class="mb-0 mt-3">Far far away, behind the word mountains, far from the
+											countries Vokalia and Consonantia, there live the blind texts.</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="testim_1i1 bg-white p-4 clearfix">
+										<span class="text-warning">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star-half-o"></i>
+										</span>
+										<div class="testim_1i1i clearfix mt-3">
+											<span><img src="img/5.jpg" alt="abc"
+													class="rounded-circle me-3 float-start"></span>
+											<h6 class="mb-0 fw-bold fs-5 lh-1"> Lorem Porta <br> <span
+													class="col_blue fs-6 fw-normal">Marketing</span></h6>
+										</div>
+										<p class="mb-0 mt-3">Far far away, behind the word mountains, far from the
+											countries Vokalia and Consonantia, there live the blind texts.</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="testim_1i1 bg-white p-4 clearfix">
+										<span class="text-warning">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<div class="testim_1i1i clearfix mt-3">
+											<span><img src="img/6.jpg" alt="abc"
+													class="rounded-circle me-3 float-start"></span>
+											<h6 class="mb-0 fw-bold fs-5 lh-1"> Dolor Amet <br> <span
+													class="col_blue fs-6 fw-normal">Data Science</span></h6>
+										</div>
+										<p class="mb-0 mt-3">Far far away, behind the word mountains, far from the
+											countries Vokalia and Consonantia, there live the blind texts.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="app" class="p_3">
+		<div class="container-xl">
+			<div class="row app_1 shadow_box p-4 px-3 mx-0">
+				<div class="col-md-6">
+					<div class="app_1l">
+						<div class="grid clearfix">
+							<figure class="effect-jazz mb-0">
+								<a href="#"><img src="img/12.jpg" class="w-100" alt="abc"></a>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="app_1r">
+						<h1>Over 10 million people are successfully <span class="col_blue">using this jobsz app</span>
+							Download on the</h1>
+						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+							doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis quasi.
+						</p>
+						<ul class="mt-4 mb-0">
+							<li class="d-inline-block"><a class="button" href="#"><i
+										class="fa fa-apple me-2 fs-4 align-middle"></i>
+									App Store</a></li>
+							<li class="d-inline-block ms-1"><a class="button_2" href="#"><i
+										class="fa fa-play me-2 fs-4 align-middle"></i>
+									Play Store</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="blog_h" class="p_3 bg-light">
+		<div class="container-xl">
+			<div class="row categ_top text-center mb-4">
+				<div class="col-md-12">
+					<h1>Read latest <span class="col_blue">articles & blogs</span></h1>
+					<p class="mb-0">There is place to find the Popular job, browse wanted your job</p>
+				</div>
+			</div>
+			<div class="row blog_h1">
+				<div class="col-md-4">
+					<div class="blog_h1i shadow_box  position-relative">
+						<div class="blog_h1i1 position-relative">
+							<div class="blog_h1i1i">
+								<div class="grid clearfix">
+									<figure class="effect-jazz mb-0 ">
+										<a href="#"><img src="img/13.jpg" class="w-100" alt=" img25"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="blog_h1i1i1 text-end position-absolute w-100 bottom-0 p-3">
+								<h6 class="mb-0 d-inline-block bg_blue p-2 text-white px-4 rounded_30">It Services</h6>
+							</div>
+						</div>
+						<div class="blog_h1i2 p-4 bg-white">
+							<ul>
+								<li class="d-inline-block"><i class="fa fa-user me-1 col_blue"></i> <a href="#">Asghar
+										Ali</a> <span class="text-muted mx-2">|</span></li>
+								<li class="d-inline-block"><i class="fa fa-clock-o me-1 col_blue"></i> <a href="#">28
+										July, 2025 </a> </li>
+							</ul>
+							<h5><a href="#">7 ideas to help you become the manager</a></h5>
+							<p>We denounce with righteous indige nation and dislike men who are so beguiled...</p>
+							<h6 class="mb-0 fw-bold"><a href="#">Learn More <i
+										class="fa fa-chevron-right ms-1 font_12"></i></a></h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="blog_h1i shadow_box position-relative">
+						<div class="blog_h1i1 position-relative">
+							<div class="blog_h1i1i">
+								<div class="grid clearfix">
+									<figure class="effect-jazz mb-0">
+										<a href="#"><img src="img/14.jpg" class="w-100" alt="img25"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="blog_h1i1i1 text-end position-absolute w-100 bottom-0 p-3">
+								<h6 class="mb-0 d-inline-block bg_blue p-2 text-white px-4 rounded_30">Human Resources
+								</h6>
+							</div>
+						</div>
+						<div class="blog_h1i2 p-4 bg-white">
+							<ul>
+								<li class="d-inline-block"><i class="fa fa-user me-1 col_blue"></i> <a href="#">Lorem
+										Amet</a> <span class="text-muted mx-2">|</span></li>
+								<li class="d-inline-block"><i class="fa fa-clock-o me-1 col_blue"></i> <a href="#">25
+										July, 2025 </a> </li>
+							</ul>
+							<h5><a href="#">Junior PHP developer –wordPress world</a></h5>
+							<p>We denounce with righteous indige nation and dislike men who are so beguiled...</p>
+							<h6 class="mb-0 fw-bold"><a href="#">Learn More <i
+										class="fa fa-chevron-right ms-1 font_12"></i></a></h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="blog_h1i shadow_box position-relative">
+						<div class="blog_h1i1 position-relative">
+							<div class="blog_h1i1i">
+								<div class="grid clearfix">
+									<figure class="effect-jazz mb-0">
+										<a href="#"><img src="img/15.jpg" class="w-100" alt="img25"></a>
+									</figure>
+								</div>
+							</div>
+							<div class="blog_h1i1i1 text-end position-absolute w-100 bottom-0 p-3">
+								<h6 class="mb-0 d-inline-block bg_blue p-2 text-white px-4 rounded_30">Manufacturing
+								</h6>
+							</div>
+						</div>
+						<div class="blog_h1i2 p-4 bg-white">
+							<ul>
+								<li class="d-inline-block"><i class="fa fa-user me-1 col_blue"></i> <a href="#">Dolor
+										Porta</a> <span class="text-muted mx-2">|</span></li>
+								<li class="d-inline-block"><i class="fa fa-clock-o me-1 col_blue"></i> <a href="#">29
+										July, 2021 </a> </li>
+							</ul>
+							<h5><a href="#">How to sell yourself in a job interview</a></h5>
+							<p>We denounce with righteous indige nation and dislike men who are so beguiled...</p>
+							<h6 class="mb-0 fw-bold"><a href="#">Learn More <i
+										class="fa fa-chevron-right ms-1 font_12"></i></a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row blog_h1 mt-4 text-center">
+				<div class="col-md-12">
+					<h6 class="mb-0"><a class="button" href="#">View All Blogs</a></h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="p_3">
+		<div class="container-xl">
+			<div class="row footer_1 bg_blue p-5 px-4 mx-0">
+				<div class="col-md-6">
+					<div class="footer_1l">
+						<h2 class="text-white mt-1">Never want to miss any job news</h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="footer_1r">
+						<div class="input-group">
+							<input type="text" class="form-control border-0" placeholder="Your Email">
+							<span class="input-group-btn">
+								<button class="btn btn-primary bg-black rounded-0 p-3 px-4 border-0" type="button">
+									Subscribe </button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_2 mt-4">
+				<div class="col-md-2">
+					<div class="footer_2i">
+						<h4 class="mb-3">Company</h4>
+						<div class="row footer_3ism">
+							<h6 class="col-md-12 col-6"><a href="https://asghar-dev.godaddysites.com/about"> About
+									Eeza</a></h6>
+							<h6 class="col-md-12 col-6 mt-2"><a href="#"> Browse Jobs</a></h6>
+							<h6 class="col-md-12 col-6 mt-2"><a href="https://asghar-dev.godaddysites.com/about">
+									Contact Us</a></h6>
+							<h6 class="col-md-12 col-6 mt-2 mb-0"><a href="#"> Candidate Dashboard</a></h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer_2i">
+						<h4 class="mb-3">Resources</h4>
+						<div class="row footer_3ism">
+							<h6 class="col-md-12 col-6"><a href="#"> Blog</a></h6>
+							<h6 class="col-md-12 col-6 mt-2"><a href="#"> Post A Job</a></h6>
+							<h6 class="col-md-12 col-6 mt-2"><a href="#"> Candidates</a></h6>
+							<h6 class="col-md-12 col-6 mt-2 mb-0"><a href="#"> Privacy Policy</a></h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="footer_2i">
+						<h4 class="mb-3">Products</h4>
+						<div class="row footer_3ism">
+							<h6 class="col-md-12 col-6"><a href="#"> Find jobs</a></h6>
+							<h6 class="col-md-12 col-6 mt-2"><a href="#"> Find compnies</a></h6>
+							<h6 class="col-md-12 col-6 mt-2"><a href="#"> I’m company</a></h6>
+							<h6 class="col-md-12 col-6 mt-2 mb-0"><a href="#"> New Jobs</a></h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="footer_2i">
+						<h1 class="mb-3 lh-1"><a href="index.html"><i class="fa fa-user col_blue me-1"></i> Jobsz</a>
+						</h1>
+						<ul>
+							<li class="d-inline-block"><span class="fs-5 col_blue fw-bold">22000+</span><br>
+								Jobs Posted</li>
+							<li class="d-inline-block mx-4"><span class="fs-5 col_blue fw-bold">26000+</span><br>
+								Jobs Lited</li>
+							<li class="d-inline-block"><span class="fs-5 col_blue fw-bold">Certified</span><br>
+								by Government</li>
+						</ul>
+						<p class="mb-0">© 2025 JobswithAli. All Rights Reserved | Design by Asghar Ali <a
+								class="col_blue fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="row footer_3">
+				<div class="col-md-6">
+					<div class="footer_3l">
+						<ul class="mb-0">
+							<li class="d-inline-block"><a href="#">Privacy</a></li>
+							<li class="d-inline-block mx-2 text-muted">|</li>
+							<li class="d-inline-block"><a href="#">Terms and condition</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="footer_3r text-end">
+						<ul class="mb-0">
+							<li class="d-inline-block"><a href="https://facebook.com/asghar22"><i
+										class="fa fa-facebook"></i></a></li>
+							<li class="d-inline-block ms-3"><a href="https://www.x.com/AsgharAli101"><i
+										class="fa fa-twitter"></i></a></li>
+							<li class="d-inline-block ms-3"><a href="https://github.com/asgharali101"><i
+										class="fa fa-github-alt"></i></a></li>
+							<li class="d-inline-block ms-3"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		window.onscroll = function () { myFunction() };
+		var navbar_sticky = document.getElementById("navbar_sticky");
+		var sticky = navbar_sticky.offsetTop;
+		var navbar_height = document.querySelector('.navbar').offsetHeight;
+		function myFunction() {
+			if (window.pageYOffset >= sticky + navbar_height) {
+				navbar_sticky.classList.add("sticky")
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+				navbar_sticky.classList.remove("sticky");
+				document.body.style.paddingTop = '0'
+			}
+		}
+	</script>
+
+</body>
+
+</html>

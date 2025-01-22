@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jobsz</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/list.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <section id="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow_box" id="navbar_sticky">
+      <div class="container-xl">
+        <a class="text-black p-0 navbar-brand fw-bold me-4" href="index.html"><i class="fa fa-user col_blue me-1"></i>
+          Jobsz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-md-4 ps-md-2 ms-lg-3 ps-lg-2 ms-xl-5 ps-xl-5 nav_left">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                List
+              </a>
+              <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="list.html"> List</a></li>
+                <li><a class="dropdown-item border-0" href="detail.html"> List Detail</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+                <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="plan.html">Plans </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+                <li><a class="dropdown-item border-0" href="contact.html"> Contact</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav mb-0 ms-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  nav_hide" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-lock col_blue me-1 align-middle"></i> Sign In
+              </a>
+              <ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
+                <li>
+                  <input class="form-control" placeholder="Email Address" type="text">
+                  <input class="form-control mt-3" placeholder="Password" type="password">
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="customCheck1">
+                    <label class="form-check-label" for="customCheck1">Keep me signed in</label>
+                  </div>
+                  <h6 class="mt-3"><a href="#">Forgot password?</a></h6>
+                  <h6 class="mt-3"><a class="button d-block text-center" href="#">Sign In</a></h6>
+                  <h6 class="mt-3 text-center">Don't have an account? <a href="#">Sign up</a></h6>
+                  <h6 class="mt-3 fw-bold col_blue text-center">or</h6>
+                  <ul class="mb-0 mt-3">
+                    <li class="d-inline-block"><a class="button p-3 font_14" href="#"><i
+                          class="fa fa-facebook me-1 align-middle fs-5"></i> Log In Via Facebook </a></li>
+                    <li class="d-inline-block ms-2"><a class="button_2 p-3 font_14" href="#"><i
+                          class="fa fa-google me-1 fs-5 align-middle"></i> Log In Via Gmail</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  nav_hide" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-plus-circle col_blue me-1 align-middle"></i> Register
+              </a>
+              <ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
+                <li>
+                  <input class="form-control" placeholder="User Name" type="text">
+                  <input class="form-control mt-3" placeholder="Email Address" type="text">
+                  <input class="form-control mt-3" placeholder="Password" type="text">
+                  <input class="form-control mt-3" placeholder="Confirm Password" type="text">
+                  <input class="form-control mt-3" placeholder="Phone" type="text">
+                  <select class="form-select mt-3" aria-label="Select Category">
+                    <option selected="">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Threee</option>
+                  </select>
+                  <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="customCheck1">
+                    <label class="form-check-label" for="customCheck1">You accept our Terms and Conditions and Privacy
+                      Policy</label>
+                  </div>
+                  <h6 class="mt-3"><a class="button d-block text-center" href="#">Register</a></h6>
+                  <h6 class="mt-3 mb-0 text-center">Already Have an Account? <a href="#">Sign In</a></h6>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link button fs-6" href="#"><i class="fa fa-plus me-1 align-middle"></i> Post A Job </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section id="center" class="center_o bg_blue pt-5 pb-5">
+    <div class="container-xl">
+      <div class="row center_o1 text-center">
+        <div class="col-md-12">
+          <h1 class="text-white">Faq</h1>
+          <h5 class="text-white mb-0 mt-3"><a class="text-white" href="#">Home</a> <span
+              class="mx-2 text-warning">/</span> Faq </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="p_3 bg-light">
+    <div class="container-xl">
+      <div class="row faq_1">
+        <div class="col-md-8">
+          <div class="faq_1l">
+            <h1 class="mb-4">Ask question for candidate?</h1>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa fa-check-circle me-2"></i> What deadlines does jubbiz apply for job applications?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample" style="">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fa fa-check-circle me-2"></i> Can I apply for several jobs at the same time?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fa fa-check-circle me-2"></i> How should I prepare for interview if I am offered one?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fa fa-check-circle me-2"></i> When will I hear about the status of my application?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <i class="fa fa-check-circle me-2"></i> What are Covid Verified hiring badges?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <i class="fa fa-check-circle me-2"></i> How can I save my Job search settings?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-0">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <i class="fa fa-check-circle me-2"></i> When will I hear about the status of my application?
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                      commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="faq_1r">
+            <div class="faq_1r1 bg_blue p-5 px-4 text-center">
+              <span class="font_70 text-white"><i class="fa fa-search"></i></span>
+              <h3 class="text-white mt-3">Looking For Job?</h3>
+              <p class="text-light mt-3 mb-0">Your next role could be with one of these top leading organizations.</p>
+            </div>
+            <div class="faq_1r1 bg-black p-5 px-4 text-center mt-4">
+              <span class="font_70 text-white"><i class="fa fa-suitcase"></i></span>
+              <h3 class="text-white mt-3">Are You Recruiting?</h3>
+              <p class="text-light mt-3 mb-0">Your next role could be with one of these top leading organizations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="p_3">
+    <div class="container-xl">
+      <div class="row footer_1 bg_blue p-5 px-4 mx-0">
+        <div class="col-md-6">
+          <div class="footer_1l">
+            <h2 class="text-white mt-1">Never want to miss any job news</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer_1r">
+            <div class="input-group">
+              <input type="text" class="form-control border-0" placeholder="Your Email">
+              <span class="input-group-btn">
+                <button class="btn btn-primary bg-black rounded-0 p-3 px-4 border-0" type="button">
+                  Subscribe </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer_2 mt-4">
+        <div class="col-md-2">
+          <div class="footer_2i">
+            <h4 class="mb-3">Company</h4>
+            <div class="row footer_3ism">
+              <h6 class="col-md-12 col-6"><a href="https://asghar-dev.godaddysites.com/about"> About
+                  Eeza</a></h6>
+              <h6 class="col-md-12 col-6 mt-2"><a href="#"> Browse Jobs</a></h6>
+              <h6 class="col-md-12 col-6 mt-2"><a href="https://asghar-dev.godaddysites.com/about">
+                  Contact Us</a></h6>
+              <h6 class="col-md-12 col-6 mt-2 mb-0"><a href="#"> Candidate Dashboard</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer_2i">
+            <h4 class="mb-3">Resources</h4>
+            <div class="row footer_3ism">
+              <h6 class="col-md-12 col-6"><a href="#"> Blog</a></h6>
+              <h6 class="col-md-12 col-6 mt-2"><a href="#"> Post A Job</a></h6>
+              <h6 class="col-md-12 col-6 mt-2"><a href="#"> Candidates</a></h6>
+              <h6 class="col-md-12 col-6 mt-2 mb-0"><a href="#"> Privacy Policy</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer_2i">
+            <h4 class="mb-3">Products</h4>
+            <div class="row footer_3ism">
+              <h6 class="col-md-12 col-6"><a href="#"> Find jobs</a></h6>
+              <h6 class="col-md-12 col-6 mt-2"><a href="#"> Find compnies</a></h6>
+              <h6 class="col-md-12 col-6 mt-2"><a href="#"> I’m company</a></h6>
+              <h6 class="col-md-12 col-6 mt-2 mb-0"><a href="#"> New Jobs</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer_2i">
+            <h1 class="mb-3 lh-1"><a href="index.html"><i class="fa fa-user col_blue me-1"></i> Jobsz</a>
+            </h1>
+            <ul>
+              <li class="d-inline-block"><span class="fs-5 col_blue fw-bold">22000+</span><br>
+                Jobs Posted</li>
+              <li class="d-inline-block mx-4"><span class="fs-5 col_blue fw-bold">26000+</span><br>
+                Jobs Lited</li>
+              <li class="d-inline-block"><span class="fs-5 col_blue fw-bold">Certified</span><br>
+                by Government</li>
+            </ul>
+            <p class="mb-0">© 2025 JobswithAli. All Rights Reserved | Design by Asghar Ali <a class="col_blue fw-bold"
+                href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row footer_3">
+        <div class="col-md-6">
+          <div class="footer_3l">
+            <ul class="mb-0">
+              <li class="d-inline-block"><a href="#">Privacy</a></li>
+              <li class="d-inline-block mx-2 text-muted">|</li>
+              <li class="d-inline-block"><a href="#">Terms and condition</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer_3r text-end">
+            <ul class="mb-0">
+              <li class="d-inline-block"><a href="https://facebook.com/asghar22"><i class="fa fa-facebook"></i></a></li>
+              <li class="d-inline-block ms-3"><a href="https://www.x.com/AsgharAli101"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="d-inline-block ms-3"><a href="https://github.com/asgharali101"><i
+                    class="fa fa-github-alt"></i></a></li>
+              <li class="d-inline-block ms-3"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    window.onscroll = function () { myFunction() };
+    var navbar_sticky = document.getElementById("navbar_sticky");
+    var sticky = navbar_sticky.offsetTop;
+    var navbar_height = document.querySelector('.navbar').offsetHeight;
+    function myFunction() {
+      if (window.pageYOffset >= sticky + navbar_height) {
+        navbar_sticky.classList.add("sticky")
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        navbar_sticky.classList.remove("sticky");
+        document.body.style.paddingTop = '0'
+      }
+    }
+  </script>
+
+</body>
+
+</html>
